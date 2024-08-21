@@ -1,0 +1,29 @@
+{
+  "name": "first-vite-project",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/first-vite-project.js",
+  "exports": {
+    ".": {
+      "import": "./dist/first-vite-project.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --project ./tsconfig.json",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vaadin/grid": "^24.4.5",
+    "lit": "^3.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.0.3"
+  }
+}

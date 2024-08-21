@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Vite + Lit + TS</title>
+      <script type="module" src="/lib/components/my-panel/src/my-panel"></script>
+      <style>
+          my-panel {
+              --my-panel-primary-bg: hotpink;
+              --my-panel-primary-color: #222;
+          }
+      </style>
+  </head>
+  <body>
+    <my-panel title="MY PROFILE" icon="👽" opened>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, modi!
+    </my-panel>
+  </body>
+
+  <script>
+      document.addEventListener('icon-click', (_) => console.log('icon clicked'));
+  </script>
+</html>
