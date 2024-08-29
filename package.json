@@ -1,29 +1,29 @@
 {
-  "name": "first-vite-project",
-  "private": false,
-  "version": "1.0.0",
+  "name": "@xmic/web-components",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
   "files": [
     "dist"
   ],
-  "module": "./dist/first-vite-project.js",
+  "module": "./dist/web-components.js",
   "exports": {
     ".": {
-      "import": "./dist/first-vite-project.js"
+      "import": "./dist/web-components.js"
     }
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc --project ./tsconfig.json",
+    "build": "tsup",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@vaadin/grid": "^24.4.5",
     "lit": "^3.2.0"
   },
   "devDependencies": {
+    "tsup": "^8.2.4",
     "typescript": "^5.5.3",
     "vite": "^5.4.1",
-    "vite-plugin-dts": "^4.0.3"
+    "vite-tsconfig-paths": "^5.0.1"
   }
 }
